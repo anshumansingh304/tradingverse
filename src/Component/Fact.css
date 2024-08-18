@@ -1,0 +1,47 @@
+/* Add this to your CSS file */
+.container {
+    padding: 20px;
+}
+
+.Facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .Facts {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left {
+        font-size: 14px;
+    }
+}

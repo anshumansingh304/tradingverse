@@ -1,0 +1,20 @@
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+    }
+}
+
+.follow-us,
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .follow-us,
+    .contact {
+        text-align: left;
+    }
+}

@@ -1,0 +1,51 @@
+.comparison-table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    color: white;
+}
+
+
+
+
+.header {
+    text-align: center;
+    /* Align text center by default */
+
+    /* Media query for phones */
+    @media (max-width: 600px) {
+        text-align: left;
+        margin-left: 80px;
+        /* Align text left for smaller screens */
+    }
+}
+
+.rowT {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px;
+    border-top: 1px solid #333;
+}
+
+.rowT:first-of-its-kind {
+    border-top: none;
+    color: white;
+}
+
+.feature {
+    flex: 2;
+}
+
+.status {
+    flex: 1;
+    text-align: center;
+}
+
+.status img {
+    width: 20px;
+    height: 20px;
+}

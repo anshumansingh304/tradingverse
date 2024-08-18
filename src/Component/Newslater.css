@@ -1,0 +1,94 @@
+.containerNews {
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    margin-left: 290px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="tel"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 400px;
+    margin-right: 10px;
+    font-size: 1rem;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+button {
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff22;
+    color: rgb(8, 8, 8);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input[type="tel"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 150%;
+    }
+
+    .containerNews {
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        /* Make the container take up most of the screen width */
+    }
+}
+
+@media (max-width: 480px) {
+    .containerNews {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        /* Full width on small screens */
+    }
+
+}
